@@ -12,7 +12,7 @@ def status():
         add()
 
 def add():
-    archivecmd = 'git add .'
+    archivecmd = 'git add --all'
     process = subprocess.Popen(archivecmd, shell=True)
     process.wait()
     archivecmdreturncode = process.returncode
