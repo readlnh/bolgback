@@ -2,7 +2,8 @@ import subprocess
 import datetime
 
 def start():
-    archivecmd = 'hexo clean'
+    archivecmd = 'hexo d \
+                 hexo clean'
     process = subprocess.Popen(archivecmd, shell=True)
     process.wait()
     add()
