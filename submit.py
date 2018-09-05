@@ -9,7 +9,7 @@ def status():
     if archivecmdreturncode != 0:
         print "error"
     else:
-        add()
+        commit()
 
 def add():
     archivecmd = 'git add --all'
@@ -19,7 +19,7 @@ def add():
     if archivecmdreturncode != 0:
         print "add error"
     else: 
-        commit()
+        status()
 
 def commit():
     now_time = datetime.datetime.now()
@@ -44,4 +44,4 @@ def push():
     else: 
         print "success"
 
-status()
+add()
