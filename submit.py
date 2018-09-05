@@ -28,10 +28,11 @@ def commit():
     process = subprocess.Popen(archivecmd, shell=True)
     process.wait()
     archivecmdreturncode = process.returncode
-    if archivecmdreturncode != 0:
-        print "commit error"
-    else: 
-        push
+    #if archivecmdreturncode != 0:
+    #    print "commit error"
+    #else: 
+    #    push
+    push()
 
 def push():
     archivecmd = 'git push'
