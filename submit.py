@@ -1,6 +1,13 @@
 import subprocess
 import datetime
 
+def start():
+    archivecmd = 'hexo clean'
+    process = subprocess.Popen(archivecmd, shell=True)
+    process.wait()
+    add()
+
+
 def status():
     archivecmd = 'git status'
     process = subprocess.Popen(archivecmd, shell=True)
