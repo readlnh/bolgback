@@ -51,4 +51,4 @@ def push():
     else: 
         print "success"
 
-add()
+start()
