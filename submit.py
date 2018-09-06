@@ -51,4 +51,8 @@ def push():
     else: 
         print "success"
 
-start()
+def main():
+    #start()
+    add()
+
+main()
